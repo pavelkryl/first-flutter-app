@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
     Scaffold(
       body: Column(
         children: [
-          Text('A double random idea:'),
+          Text('A random idea:'),
           Text(appState.current.asLowerCase),
         ],
       ),
