@@ -1,4 +1,3 @@
-import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
 final appState = MyAppState();
@@ -8,7 +7,7 @@ void main() {
 }
 
 class MyAppState {
-  var current = WordPair.random();
+  var current = "ahoj";
 }
 
 class MyApp extends StatelessWidget {
@@ -35,7 +34,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Text('A random idea:'),
-          Text(appState.current.asLowerCase),
+          Text(appState.current),
         ],
       ),
     );
