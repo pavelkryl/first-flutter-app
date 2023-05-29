@@ -82,7 +82,6 @@ class Tlacitko extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20)
         ),
-        fixedSize: Size(50, 50),
         padding: EdgeInsets.all(25),
       ),
       child: Column(
