@@ -25,22 +25,16 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text("Dialer"),
       ),
       body: Center(
         child: SizedBox(
-          width: 340,
+          width: 400,
+          height: double.infinity,
           child: GridView.count(
+            shrinkWrap: true,
             crossAxisCount: 3,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
@@ -52,11 +46,11 @@ class MyHomePage extends StatelessWidget {
               Tlacitko(cislice: "4", pismena: "GHI"),
               Tlacitko(cislice: "5", pismena: "JKL"),
               Tlacitko(cislice: "6", pismena: "MNO"),
-          
+              
               Tlacitko(cislice: "7", pismena: "PQR"),
               Tlacitko(cislice: "8", pismena: "STU"),
               Tlacitko(cislice: "9", pismena: "WXYZ"),
-
+              
               Tlacitko(cislice: "*"),
               Tlacitko(cislice: "0", pismena: "+"),
               Tlacitko(cislice: "#"),
@@ -88,6 +82,7 @@ class Tlacitko extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20)
         ),
+        fixedSize: Size(50, 50),
         padding: EdgeInsets.all(25),
       ),
       child: Column(
@@ -100,3 +95,5 @@ class Tlacitko extends StatelessWidget {
     );
   }
 }
+
+
