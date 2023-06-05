@@ -83,11 +83,9 @@ class Cislitko extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Expanded(
-            child: Text("+420773111222",
+          Text("+420773111222",
               style: style,
               textAlign: TextAlign.center,
-            )
           ),
           IconButton(onPressed: () {}, icon: const Icon(Icons.backspace))
         ],
